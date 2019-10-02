@@ -4,11 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Enter Title of HW Here</title>
+  <title>Calculator</title>
 </head>
 <body>
-  <!-- Enter HTML here. -->
-
+  <form action="#">
+  <label for="num-1">Enter the First number</label>
+  <input type="number" id="num-1"/>
+  <label for="operation">Enter the Second Number</label>
+  <input type="number" id="num-2"/>
+  <label for=operation>Select the type of operation</label>
+  <select id="operation">
+    <option value="add">Add</operation>
+    <option value="subtract">Subtract</operation>
+    <option value="multiply">Multipy</operation>
+    <option value="divide">Divide</operation>
+    <option value="remainder">Remainder</operation>
+  </select>
+  <input type="submit" value="Do Math" />
+  <output></output>
+  </form>
   <script src="scripts.js"></script>
 </body>
 </html>
