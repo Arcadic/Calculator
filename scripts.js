@@ -5,25 +5,25 @@
  * Use those steps as your `commit` messages (and delete them from here as you complete a step.)
  */
 
-function add(a, b) {
-  return Number(a) + Number(b);
-}
+const calculator = {
+  add: function add(a, b) {
+    return Number(a) + Number(b);
+  },
+  subtract: function subtract(a, b) {
+    return a - b;
+  },
+  multiply: function multiply(a, b) {
+    return a * b;
+  },
+  divide: function divide(a, b) {
+    return a / b;
+  },
+  remainder: function remainder(a, b) {
+    return a % b;
+  }
+};
 
-function subtract(a, b) {
-  return a - b;
-}
-
-function multiply(a, b) {
-  return a * b;
-}
-
-function divide(a, b) {
-  return a / b;
-}
-
-function remainder(a, b) {
-  return a % b;
-}
+console.log(calculator.add(1, 2));
 
 const form = document.querySelector("form");
 const num1 = document.querySelector("#num-1");
