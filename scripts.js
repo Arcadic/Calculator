@@ -29,9 +29,9 @@ const num2 = document.querySelector("#num-2");
 const select = document.querySelector("select");
 const output = document.querySelector("output");
 //bracket notation
-output.textContent = calculator["add"](2, 5);
+//output.textContent = calculator["add"](2, 5);
 
 output.form.addEventListener("submit", function(event) {
   event.preventDefault();
-  console.log(num1.value, num2.value, select.value);
+  output.textContent = calculator[select.value](num1.value, num2.value);
 });
